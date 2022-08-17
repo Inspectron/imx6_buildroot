@@ -19,7 +19,7 @@ if [ "x$SHALLOW" == "xtrue" ]; then
 fi
 
 if [ "x$CUSTOM_CONFIG" == "x" ]; then
-        CUSTOM_CONFIG=imx6_solidrun_base_defconfig
+        CUSTOM_CONFIG=imx6_fluke_defconfig
 fi
 
 REPO_PREFIX=`git log -1 --pretty=format:%h`
@@ -64,8 +64,9 @@ fi
 # Build buildroot
 echo "*** Building buildroot"
 cd $BASE_DIR/build/buildroot
-cp $BASE_DIR/configs/$CUSTOM_CONFIG configs/imx6_solidrun_defconfig
-make imx6_solidrun_defconfig
+cp -r $BASE_DIR/board/* board
+cp $BASE_DIR/configs/$CUSTOM_CONFIG configs/$CUSTOM_CONFIG
+make ${CUSTOM_CONFIG}
 make
 
 IMG=microsd-${REPO_PREFIX}.img
