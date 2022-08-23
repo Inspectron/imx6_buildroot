@@ -78,7 +78,6 @@
             regulator-always-on;
         };
     };
-
 };
 
 &mipi_dsi {
@@ -95,7 +94,7 @@
     };
 
     panel@0 {
-        compatible = "bananapi,lhr050h41", "ilitek,ili9881c";
+        compatible = "hummingboard,hsd070bww5", "ilitek,ili9881c";
         reg = <0>;
         power-supply = <&reg_3p3v>;
         //reset-gpios = <&r_pio 0 5 GPIO_ACTIVE_LOW>; /* PL05 */
@@ -228,4 +227,13 @@
 /delete-node/ &pinctrl_hummingboard_spdif;
 /delete-node/ &pinctrl_hummingboard_usbh1_vbus;
 
+// set the usb-otg to pull up
+&pinctrl_hummingboard_usbotg_id {
+    label = "INSP_USB_OTG_ID";
+    fsl,pins = <MX6QDL_PAD_GPIO_1__GPIO1_IO01 0x0001B0B0>;
+};
 
+&snvs_poweroff {
+    label ="INSP_PWR_OFF";
+    status = "okay";
+};
