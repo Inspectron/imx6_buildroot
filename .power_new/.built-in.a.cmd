@@ -1,0 +1,1 @@
+cmd_drivers/power/built-in.a := echo >/dev/null; rm -f drivers/power/built-in.a; /media/insp-dev2/DevelopmentShare/buildroot/insp_imx6/build/buildroot/output/host/bin/arm-buildroot-linux-gnueabihf-ar cDPrST drivers/power/built-in.a drivers/power/reset/built-in.a drivers/power/supply/built-in.a

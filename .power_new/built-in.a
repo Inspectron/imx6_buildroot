@@ -1,0 +1,36 @@
+!<thin>
+//                                              474       `
+reset/syscon-reboot.o/
+reset/syscon-poweroff.o/
+supply/power_supply_core.o/
+supply/power_supply_sysfs.o/
+supply/power_supply_leds.o/
+supply/power_supply_hwmon.o/
+supply/axp/axp-core.o/
+supply/axp/axp-sysfs.o/
+supply/axp/axp-virtual.o/
+supply/axp/axp-powerkey.o/
+supply/axp/axp-charger.o/
+supply/axp/axp-gpio.o/
+supply/axp/axp-regulator.o/
+supply/axp/nmi/sunxi-nmi.o/
+supply/axp/axp2585/axp2585.o/
+supply/axp/axp2585/axp2585-charger.o/
+supply/axp/axp2585/axp2585-powerkey.o/
+/0              0           0     0     644     3880      `
+/23             0           0     0     644     4112      `
+/48             0           0     0     644     40884     `
+/76             0           0     0     644     16156     `
+/105            0           0     0     644     2896      `
+/133            0           0     0     644     5168      `
+/162            0           0     0     644     29688     `
+/185            0           0     0     644     7420      `
+/209            0           0     0     644     6132      `
+/235            0           0     0     644     5000      `
+/262            0           0     0     644     34672     `
+/288            0           0     0     644     13440     `
+/311            0           0     0     644     12828     `
+/339            0           0     0     644     8904      `
+/367            0           0     0     644     9620      `
+/397            0           0     0     644     16160     `
+/435            0           0     0     644     6400      `
